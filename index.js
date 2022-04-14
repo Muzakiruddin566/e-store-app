@@ -8,14 +8,14 @@ app.use(bodyParser.json());
 const transport = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: "zikarhashmi92@gmail.com",
-    pass: "zikarhashmi",
+    user: "GMAIL",
+    pass: "PASSWORD",
   },
 });
 const sendEmail = (email, total) => {
   transport
     .sendMail({
-      from: "zikarhashmi92@gmail.com",
+      from: "GMAIL",
       to: email,
       subject: " receipt",
       html: `<div>
